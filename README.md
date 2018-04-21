@@ -77,3 +77,26 @@ pipenv install -r requirements/local.txt
 
 이때 local.txt는 쿠키커터에서 입력한 정보를 바탕으로 생성된 필요한 패키지 모음이다
 npm 의 package.json 과 완전히 같지는 않지만 비슷한 느낌으로 생각하면 될듯
+
+##### local.txt 파일 예시
+```xml
+# Local development dependencies go here
+-r base.txt
+
+coverage==4.4.1
+django-coverage-plugin==1.5.0
+
+Sphinx==1.6.4
+django-extensions==1.9.1
+Werkzeug==0.12.2
+django-test-plus==1.0.18
+factory-boy==2.9.2
+
+django-debug-toolbar==1.8
+
+# improved REPL
+ipdb==0.10.3
+
+pytest-django==3.1.2
+pytest-sugar==0.9.0
+```
